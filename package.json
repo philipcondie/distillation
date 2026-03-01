@@ -1,0 +1,12 @@
+{
+  "name": "distillation",
+  "version": "1.0.0",
+  "main": "column.js",
+  "scripts": {
+    "test": "node --test test/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -130,3 +130,21 @@ test('Check solver results', () => {
     // console.log(`Solved reflux ratio: ${result}, expected:${actual}`);
     assert.ok(Math.abs(result - actual) <= 1e-2*actual);
 })
+
+test('DEBUG Column Solver', () => {
+    const feedRate = 1000;
+    const xFeed = 0.50;
+    const xDist = 0.78;
+    const xBtms = 0.05;
+    const pressure = 114.7;
+    const feedTray = 8;
+    const totalTrays = 8;
+
+
+    const result = columnSolver(
+        feedRate, xFeed, xDist, xBtms, pressure, 
+        feedTray, totalTrays, propaneConstants, butaneConstants
+    );
+    
+    console.log(`Result: ${result}`);
+});
